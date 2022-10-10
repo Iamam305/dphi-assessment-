@@ -1,15 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <div>
         <nav className="mx-auto flex max-w-screen-xl bg-white items-center justify-between p-4">
-  <a
+  <Link
     className="inline-flex  items-center justify-center rounded-lg "
-    href="/"
+    to="/"
   >
     <img src="https://iili.io/Q8knWJ.png" alt="" />
-  </a>
+  </Link>
 
   <ul className="flex items-center gap-2 text-sm font-medium text-gray-500">
     <li className="hidden lg:block">
