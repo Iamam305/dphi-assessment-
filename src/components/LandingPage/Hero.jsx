@@ -5,22 +5,22 @@ const Hero = () => {
   return (
     <div className="bg-[#003145]">
       <section className="max-w-screen-xl w-full m-auto  flex justify-between px-4 items-center py-16 ">
-        <div class=" md:py-12 md:w-3/5 lg:py-24">
-          <div class="mx-auto  text-center sm:text-left">
-            <h2 class="text-3xl border-l-8 pl-12 border-yellow-200 font-bold text-white md:text-5xl">
+        <div className=" md:py-12 md:w-3/5 lg:py-24">
+          <div className="mx-auto  text-center sm:text-left">
+            <h2 className="text-3xl border-l-8 pl-12 border-yellow-200 font-bold text-white md:text-5xl">
               Accelerate Innovation with Global AI Challenges
             </h2>
 
-            <p class="pl-12  text-white mt-10 md:block text-xl">
+            <p className="pl-12  text-white mt-10 md:block text-xl">
               AI Challenges at DPhi simulate real-world problems. It is a great
               place to put your AI/Data Science skills to test on diverse
               datasets allowing you to foster learning through competitions.
             </p>
 
-            <div class="pl-12 mt-4 md:mt-12">
+            <div className="pl-12 mt-4 md:mt-12">
               <Link
                 to={'/create'}
-                class="inline-block  bg-white rounded-md px-12 py-3  font-medium  text-xl transition"
+                className="inline-block  bg-white rounded-md px-12 py-3  font-medium  text-xl transition"
               >
                 Create Chalenge
               </Link>
@@ -31,7 +31,7 @@ const Hero = () => {
         <img
           alt="Student"
           src="https://svgshare.com/i/nGm.svg"
-          class="md:w-2/5  object-cover "
+          className="md:w-2/5  object-cover "
         />
       </section>
       <div className="py-12 bg-[#002A3B] md:flex justify-around">

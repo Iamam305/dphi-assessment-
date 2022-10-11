@@ -9,12 +9,11 @@ const Create = () => {
   const [end, setEnd] = useState("");
   const [description, setDescription] = useState("");
   const [img, setImg] = useState("");
-  console.log(img);
+
   const [lvl, setLvl] = useState("");
 
   const nav = useNavigate();
 
-  console.log(db);
   const challengeDetail = {
     name,
     start,
@@ -23,6 +22,20 @@ const Create = () => {
     img,
     lvl,
     id: "",
+    status : function() {
+           
+      if (new Date(this.end) > new Date() && new Date(this.start) < new Date()) {
+          return 'Active'
+      }
+      if ( new Date(this.end) > new Date() && new Date(this.start) > new Date()) {
+          return "Upcoming"
+      }
+      if (new Date(result.end) < new Date() && new Date(result.start) > new Date()) {
+          return "Past"
+      }
+      return "lol"
+  
+  }
   };
 
   const createChallenge = async (event) => {
